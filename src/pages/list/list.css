@@ -1,0 +1,85 @@
+.listContainer {
+    display: flex;
+    flex-direction: column; /* Change to column for small screens */
+    align-items: center;
+    margin-top: 20px;
+  }
+  
+  .listWrapper {
+    width: 100%;
+    max-width: 1024px;
+    display: flex;
+    flex-wrap: wrap; /* Allow items to wrap on smaller screens */
+    gap: 20px;
+    justify-content: center; /* Center items in the wrapper */
+  }
+  
+  .listSearch {
+    flex: 1;
+    background-color: #febb02;
+    padding: 10px;
+    border-radius: 10px;
+    position: sticky;
+    top: 10px;
+    width: 100%; /* Occupy full width on small screens */
+    margin-bottom: 20px; /* Add margin for spacing */
+  }
+  
+  .lsTitle {
+    font-size: 20px;
+    color: #555;
+    margin-bottom: 10px;
+  }
+  
+  .lsItem {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    margin-bottom: 10px;
+  }
+  
+  .lsItem > label {
+    font-size: 12px;
+  }
+  
+  .lsItem > input {
+    width: 100%; /* Occupy full width */
+    height: 30px;
+    border: none;
+    padding: 5px;
+  }
+  
+  .lsItem > span {
+    height: 30px;
+    padding: 5px;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+  }
+  
+  .lsOptions {
+    padding: 10px;
+  }
+  
+  .lsOptionItem {
+    display: flex;
+    flex-direction: column; /* Adjust for small screens */
+    gap: 5px;
+    margin-bottom: 10px;
+    color: #555;
+    font-size: 12px;
+  }
+  
+  /* Media query for smaller screens */
+  @media screen and (max-width: 768px) {
+    .listWrapper {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: stretch; /* Stretch items to occupy full width */
+    }
+    
+    .listSearch {
+      position: static; /* Remove sticky positioning on small screens */
+    }
+  }
+  

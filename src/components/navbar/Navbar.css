@@ -1,0 +1,41 @@
+.navbar {
+    height: 50px;
+    background-color: #003580;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navContainer {
+    width: 100%;
+    max-width: 1024px;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px; /* Add padding for better spacing on smaller screens */
+  }
+  
+  .logo {
+    font-weight: 500;
+  }
+  
+  .navBtn {
+    margin-left: 20px;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    color: #003580;
+  }
+  
+  /* Media query for smaller screens */
+  @media only screen and (max-width: 768px) {
+    .navContainer {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      align-items: center; /* Center items horizontally */
+    }
+  
+    .navBtn {
+      margin: 10px 0; /* Adjust margin for better spacing on smaller screens */
+    }
+  }
+  
